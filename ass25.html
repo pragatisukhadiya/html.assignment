@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css navigation menu</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+header{
+    height: 80px;
+    background-color: rgb(170, 170, 236);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 30px;
+}
+ul li {
+    margin: 0px 6px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(23, 23, 224);
+    color: white;
+    border: 1px solid;
+    padding: 13px 20px;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.5s ease;
+}
+a:hover{
+    background-color: rgb(6, 6, 104);
+    color: black;
+}
+@media screen and (max-width:600px)
+{
+    header{
+        height: auto;
+        display: block;
+        padding: 20px 0px;
+        background-color: rgb(241, 118, 118);
+        font-size: small;
+    }
+    ul{
+        display: block;
+        margin-right: 0;
+    }
+    ul li {
+        margin:6px;
+    }
+    
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Image</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
